@@ -39,13 +39,13 @@ const Game = () => {
 
   return (
     <>
-      <h1>React Tic Tac Toe - With Hooks</h1>
+      <h1>React Tic Tac Toe</h1>
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
-        <div>
+        {/* <div>
           <h3>History</h3>
           {renderMoves()}
-        </div>
+        </div> */}
         <h3>{winner ? "Winner: " + winner : "Next Player: " + xO}</h3>
       </div>
     </>
